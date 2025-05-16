@@ -1,4 +1,8 @@
 /* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -6,7 +10,7 @@
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #ff0000;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -28,32 +32,32 @@
 }
 
 .badge-verified {
-  background-color: #10B981;
+  background-color: #10b981;
   color: white;
 }
 
 .badge-screenshot {
-  background-color: #6366F1;
+  background-color: #6366f1;
   color: white;
 }
 
 .badge-legendary {
-  background-color: #9333EA;
+  background-color: #9333ea;
   color: white;
 }
 
 .badge-epic {
-  background-color: #6366F1;
+  background-color: #6366f1;
   color: white;
 }
 
 .badge-rare {
-  background-color: #3B82F6;
+  background-color: #3b82f6;
   color: white;
 }
 
 .badge-common {
-  background-color: #60A5FA;
+  background-color: #60a5fa;
   color: white;
 }
 
@@ -78,33 +82,33 @@
   opacity: 0.5;
   cursor: not-allowed;
   background-color: #666666;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .button-primary {
-  background-color: #FF0000;
+  background-color: #ff0000;
   color: white;
 }
 
 .button-primary:hover:not(:disabled) {
   background-color: #000000;
-  color: #FF0000;
-  border: 2px solid #FF0000;
+  color: #ff0000;
+  border: 2px solid #ff0000;
 }
 
 .button-secondary {
-  background-color: #FF6A00;
+  background-color: #ff6a00;
   color: #000000;
 }
 
 .button-secondary:hover:not(:disabled) {
   background-color: #000000;
-  color: #FF6A00;
-  border: 2px solid #FF6A00;
+  color: #ff6a00;
+  border: 2px solid #ff6a00;
 }
 
 .button-success {
-  background-color: #10B981;
+  background-color: #10b981;
   color: white;
 }
 
@@ -113,7 +117,7 @@
 }
 
 .description {
-  color: #6B7280;
+  color: #6b7280;
   margin-bottom: 1.5rem;
 }
 
@@ -140,7 +144,7 @@
 }
 
 .stat-card {
-  background-color: #F3F4F6;
+  background-color: #ff0000;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -153,7 +157,7 @@
 }
 
 .stat-label {
-  color: #6B7280;
+  color: #eeeeee;
   font-size: 0.875rem;
 }
 
@@ -168,8 +172,8 @@
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
-  background-color: #F9FAFB;
-  border: 1px solid #E5E7EB;
+  background-color: #ff0000;
+  border: 1px solid #e5e7eb;
 }
 
 .title-image {
@@ -186,7 +190,7 @@
 
 .title-desc {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: #eeeeee;
   margin-bottom: 0.5rem;
 }
 
@@ -198,7 +202,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #E5E7EB;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .activity-icon {
@@ -224,13 +228,13 @@
 .activity-meta {
   display: flex;
   font-size: 0.875rem;
-  color: #6B7280;
+  color: #6b7280;
   gap: 1rem;
 }
 
 .progress-bar {
   height: 10px;
-  background-color: #E5E7EB;
+  background-color: #e5e7eb;
   border-radius: 5px;
   margin: 1rem 0;
   overflow: hidden;
@@ -238,7 +242,7 @@
 
 .progress-fill {
   height: 100%;
-  background-color: #3B82F6;
+  background-color: #3b82f6;
   border-radius: 5px;
 }
 
@@ -269,7 +273,7 @@
 
 .post-timestamp {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .post-content {
@@ -286,7 +290,7 @@
 }
 
 .post-activity-data {
-  background-color: #F3F4F6;
+  background-color: #111111;
   border-radius: 8px;
   padding: 0.75rem;
   margin-bottom: 1rem;
@@ -301,26 +305,26 @@
 
 .post-activity-label {
   font-size: 0.75rem;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .post-actions {
   display: flex;
   justify-content: space-between;
   padding-top: 0.75rem;
-  border-top: 1px solid #E5E7EB;
+  border-top: 1px solid #e5e7eb;
 }
 
 .post-action {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #6B7280;
+  color: #111111;
   cursor: pointer;
 }
 
 .post-action:hover {
-  color: #3B82F6;
+  color: #3b82f6;
 }
 
 .category-tabs {
@@ -335,18 +339,18 @@
   border-radius: 20px;
   white-space: nowrap;
   cursor: pointer;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
 }
 
 .category-tab.active {
-  background-color: #3B82F6;
+  background-color: #3b82f6;
   color: white;
-  border-color: #3B82F6;
+  border-color: #3b82f6;
 }
 
 /* DailyChallenge Styles */
 .challenge-card {
-  border: 2px solid #E5E7EB;
+  border: 2px solid #e5e7eb;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -355,7 +359,7 @@
 }
 
 .challenge-card.active {
-  border-color: #3B82F6;
+  border-color: #3b82f6;
 }
 
 .challenge-header {
@@ -372,11 +376,11 @@
 
 .challenge-type {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: #eeeeee;
 }
 
 .challenge-participants {
-  background-color: #F3F4F6;
+  background-color: #ff0000;
   border-radius: 20px;
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
@@ -394,7 +398,8 @@
 }
 
 .challenge-reward {
-  background-color: #F3F4F6;
+  background-color: #ff0000;
+  color: #fff;
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
   display: flex;
@@ -436,12 +441,12 @@
 }
 
 .challenge-status.joined {
-  background-color: #3B82F6;
+  background-color: #3b82f6;
   color: white;
 }
 
 .challenge-status.completed {
-  background-color: #10B981;
+  background-color: #10b981;
   color: white;
 }
 
@@ -464,14 +469,14 @@
   border-radius: 20px;
   font-size: 0.875rem;
   cursor: pointer;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   background-color: white;
 }
 
 .filter-button.active {
-  background-color: #3B82F6;
+  background-color: #3b82f6;
   color: white;
-  border-color: #3B82F6;
+  border-color: #3b82f6;
 }
 
 .marketplace-grid {
@@ -483,7 +488,7 @@
 .marketplace-item {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   transition: transform 0.2s ease;
 }
 
@@ -533,7 +538,7 @@
 }
 
 .item-description {
-  color: #6B7280;
+  color: #6b7280;
   font-size: 0.875rem;
   margin-bottom: 1rem;
   height: 40px;
@@ -545,7 +550,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  border-top: 1px solid #E5E7EB;
+  border-top: 1px solid #e5e7eb;
 }
 
 .price-value {
@@ -553,7 +558,7 @@
 }
 
 .price-currency {
-  background-color: #F3F4F6;
+  background-color: #ff0000;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.75rem;
@@ -566,14 +571,14 @@
   gap: 0.5rem;
   margin-top: 0.75rem;
   font-size: 0.75rem;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .sponsored-badge {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #F9FAFB;
+  background-color: #111111;
   padding: 0.5rem;
   border-radius: 4px;
   margin-top: 0.75rem;
@@ -601,7 +606,7 @@
 }
 
 .drop-area {
-  border: 2px dashed #E5E7EB;
+  border: 2px dashed #e5e7eb;
   border-radius: 8px;
   padding: 2rem;
   text-align: center;
@@ -616,8 +621,8 @@
 }
 
 .drop-area:hover {
-  border-color: #3B82F6;
-  background-color: #F9FAFB;
+  border-color: #3b82f6;
+  background-color: #f9fafb;
 }
 
 .upload-prompt {
@@ -625,7 +630,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .preview-container {
@@ -717,14 +722,14 @@
 
 .form-control {
   padding: 0.75rem;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   font-size: 1rem;
 }
 
 .extracted-value {
   font-size: 0.75rem;
-  color: #6B7280;
+  color: #6b7280;
   margin-top: 0.25rem;
 }
 
@@ -738,12 +743,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #FEF3C7;
+  background-color: #fef3c7;
   padding: 0.75rem;
   border-radius: 8px;
   margin-top: 1rem;
   font-size: 0.875rem;
-  color: #92400E;
+  color: #92400e;
 }
 
 /* Social Post with Screenshot Verification */
@@ -755,12 +760,12 @@
 }
 
 .verification-icon {
-  color: #10B981;
+  color: #10b981;
 }
 
 .screenshot-indicator {
   font-size: 0.75rem;
-  color: #6B7280;
+  color: #6b7280;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -769,7 +774,7 @@
 .screenshot-preview-button {
   background: none;
   border: none;
-  color: #3B82F6;
+  color: #3b82f6;
   text-decoration: underline;
   cursor: pointer;
   padding: 0;
@@ -782,17 +787,17 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 1px dashed #3B82F6;
+  border: 1px dashed #3b82f6;
   border-radius: 8px;
-  background-color: #EFF6FF;
-  color: #3B82F6;
+  background-color: #eff6ff;
+  color: #3b82f6;
   cursor: pointer;
   margin-bottom: 1rem;
   transition: all 0.2s ease;
 }
 
 .add-screenshot-button:hover {
-  background-color: #DBEAFE;
+  background-color: #dbeafe;
 }
 
 /* Landing Page Styles */
@@ -802,7 +807,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Barlow Condensed', 'Orbitron', sans-serif;
+  font-family: "Barlow Condensed", "Orbitron", sans-serif;
 }
 
 .landing-container {
@@ -824,7 +829,7 @@
 }
 
 .connect-button {
-  background-color: #FF6A00;
+  background-color: #ff6a00;
   color: #000000;
   border: none;
   padding: 1rem 2rem;
@@ -840,19 +845,19 @@
 
 .connect-button:hover {
   background-color: #000000;
-  border: 2px solid #FF0000;
-  color: #FF0000;
+  border: 2px solid #ff0000;
+  color: #ff0000;
   box-shadow: none;
 }
 
 .connect-button:disabled {
   background-color: #666666;
-  color: #CCCCCC;
+  color: #cccccc;
   cursor: not-allowed;
 }
 
 .landing-slogan {
-  color: #FF6A00;
+  color: #ff6a00;
   font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
@@ -862,38 +867,42 @@
 }
 
 /* Input field styles */
-input, textarea, select {
+input,
+textarea,
+select {
   border: 1px solid #333333;
   padding: 0.75rem;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
-  border-color: #FF6A00;
+  border-color: #ff6a00;
   box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.2);
 }
 
 /* Import custom font */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&display=swap");
 
 /* Additional mobile responsiveness */
 @media (max-width: 768px) {
   .landing-container {
     padding: 1rem;
   }
-  
+
   .landing-logo {
     width: 220px;
   }
-  
+
   .connect-button {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
-  
+
   .landing-slogan {
     font-size: 1rem;
   }
@@ -906,9 +915,9 @@ input:focus, textarea:focus, select:focus {
     -webkit-overflow-scrolling: touch;
     padding: 0.5rem;
   }
-  
+
   nav > div {
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
   }
-} 
+}
