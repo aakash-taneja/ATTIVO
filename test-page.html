@@ -1,250 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATTIVO Sports Platform - Test Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/components.css" />
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Barlow Condensed', 'Orbitron', sans-serif;
-        }
-        
-        .tabs {
-            display: flex;
-            background-color: #000000;
-            padding: 1rem;
-            justify-content: center;
-        }
-        
-        .tab {
-            padding: 0.75rem 1.5rem;
-            cursor: pointer;
-            color: white;
-            border-bottom: 3px solid transparent;
-        }
-        
-        .tab.active {
-            color: #FF0000;
-            border-bottom: 3px solid #FF0000;
-            font-weight: bold;
-        }
-        
-        .content {
-            display: none;
-        }
-        
-        .content.active {
-            display: block;
-        }
-        
-        /* Landing page styles */
-        .landing-page {
-            background-color: #000000;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .landing-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            max-width: 500px;
-        }
-        
-        .logo-container {
-            margin-bottom: 3rem;
-        }
-        
-        .landing-logo {
-            width: 280px;
-            height: auto;
-        }
-        
-        .connect-button {
-            background-color: #FF6A00;
-            color: #000000;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.25rem;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 2rem;
-        }
-        
-        .connect-button:hover {
-            background-color: #000000;
-            border: 2px solid #FF0000;
-            color: #FF0000;
-        }
-        
-        .landing-slogan {
-            color: #FF6A00;
-            font-size: 1.25rem;
-            font-weight: 600;
-            text-align: center;
-            max-width: 400px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        /* App page styles */
-        .app-header {
-            background-color: #000000;
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .header-logo {
-            height: 40px;
-            width: auto;
-        }
-        
-        .main-content {
-            padding: 2rem;
-            background-color: #111111;
-            min-height: calc(100vh - 180px);
-            color: white;
-        }
-        
-        .app-footer {
-            background-color: #000000;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        .footer-tagline {
-            margin-top: 0.5rem;
-            font-size: 0.875rem;
-            color: #FF6A00;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Barlow Condensed", "Orbitron", sans-serif;
+      }
+
+      .tabs {
+        display: flex;
+        background-color: #000000;
+        padding: 1rem;
+        justify-content: center;
+      }
+
+      .tab {
+        padding: 0.75rem 1.5rem;
+        cursor: pointer;
+        color: white;
+        border-bottom: 3px solid transparent;
+      }
+
+      .tab.active {
+        color: #ff0000;
+        border-bottom: 3px solid #ff0000;
+        font-weight: bold;
+      }
+
+      .content {
+        display: none;
+      }
+
+      .content.active {
+        display: block;
+      }
+
+      /* Landing page styles */
+      .landing-page {
+        background-color: #000000;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .landing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        max-width: 500px;
+      }
+
+      .logo-container {
+        margin-bottom: 3rem;
+      }
+
+      .landing-logo {
+        width: 280px;
+        height: auto;
+      }
+
+      .connect-button {
+        background-color: #ff6a00;
+        color: #000000;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+      }
+
+      .connect-button:hover {
+        background-color: #000000;
+        border: 2px solid #ff0000;
+        color: #ff0000;
+      }
+
+      .landing-slogan {
+        color: #ff6a00;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        max-width: 400px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* App page styles */
+      .app-header {
+        background-color: #000000;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .header-logo {
+        height: 40px;
+        width: auto;
+      }
+
+      .main-content {
+        padding: 2rem;
+        background-color: #111111;
+        min-height: calc(100vh - 180px);
+        color: white;
+      }
+
+      .app-footer {
+        background-color: #000000;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .footer-tagline {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: #ff6a00;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="tabs">
-        <div class="tab active" onclick="showContent('landing')">LANDING PAGE</div>
-        <div class="tab" onclick="showContent('app')">APP PAGE</div>
+      <div class="tab active" onclick="showContent('landing')">
+        LANDING PAGE
+      </div>
+      <div class="tab" onclick="showContent('app')">APP PAGE</div>
     </div>
-    
+
     <!-- Landing Page Test -->
     <div id="landing" class="content active">
-        <div class="landing-page">
-            <div class="landing-container">
-                <div class="logo-container">
-                    <img src="public/assets/attivo-logo.svg" alt="ATTIVO Logo" class="landing-logo">
-                </div>
-                
-                <button class="connect-button" onclick="showContent('app')">
-                    CONNECT WALLET
-                </button>
-                
-                <p class="landing-slogan">
-                    ENERGIZE YOUR GAME, REWARD YOUR STATS, ELEVATE YOUR LIFE!
-                </p>
-            </div>
+      <div class="landing-page">
+        <div class="landing-container">
+          <div class="logo-container">
+            <img
+              src="public/assets/attivo-logo.png"
+              alt="ATTIVO Logo"
+              class="landing-logo"
+            />
+          </div>
+
+          <button class="connect-button" onclick="showContent('app')">
+            CONNECT WALLET
+          </button>
+
+          <p class="landing-slogan">
+            ENERGIZE YOUR GAME, REWARD YOUR STATS, ELEVATE YOUR LIFE!
+          </p>
         </div>
+      </div>
     </div>
-    
+
     <!-- App Page Test -->
     <div id="app" class="content">
-        <div>
-            <!-- Header -->
-            <header class="app-header">
-                <div class="header-left">
-                    <img src="public/assets/attivo-logo.svg" alt="ATTIVO Logo" class="header-logo">
-                    <div style="font-size: 1.5rem; font-weight: bold;">
-                        ATTIVO SPORTS PLATFORM
-                    </div>
-                </div>
-                <button class="button button-primary">
-                    CONNECTED
-                </button>
-            </header>
-            
-            <!-- Navigation -->
-            <nav style="display: flex; justify-content: center; gap: 1rem; padding: 1rem; border-bottom: 1px solid #333333; background-color: #000000;">
-                <div style="padding: 0.75rem 1.5rem; cursor: pointer; border-bottom: 3px solid #FF0000; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; color: #FF0000; letter-spacing: 1px;">
-                    <span style="font-size: 1.25rem;">👤</span>
-                    SPORT ID
-                </div>
-                <div style="padding: 0.75rem 1.5rem; cursor: pointer; border-bottom: 3px solid transparent; font-weight: normal; display: flex; align-items: center; gap: 0.5rem; color: white; letter-spacing: 1px;">
-                    <span style="font-size: 1.25rem;">📱</span>
-                    SOCIAL FEED
-                </div>
-                <div style="padding: 0.75rem 1.5rem; cursor: pointer; border-bottom: 3px solid transparent; font-weight: normal; display: flex; align-items: center; gap: 0.5rem; color: white; letter-spacing: 1px;">
-                    <span style="font-size: 1.25rem;">🏆</span>
-                    CHALLENGES
-                </div>
-                <div style="padding: 0.75rem 1.5rem; cursor: pointer; border-bottom: 3px solid transparent; font-weight: normal; display: flex; align-items: center; gap: 0.5rem; color: white; letter-spacing: 1px;">
-                    <span style="font-size: 1.25rem;">🛒</span>
-                    MARKETPLACE
-                </div>
-            </nav>
-            
-            <!-- Main Content (Sample) -->
-            <main class="main-content">
-                <h1>SPORT ID</h1>
-                <p>This is a test page for the ATTIVO Sports Platform app interface.</p>
-                <p>In a real implementation, this would show dynamic content based on the selected tab.</p>
-            </main>
-            
-            <!-- Footer -->
-            <footer class="app-footer">
-                <div>
-                    ATTIVO SPORTS PLATFORM © 2023
-                </div>
-                <div class="footer-tagline">
-                    POWERED BY BLOCKCHAIN TECHNOLOGY
-                </div>
-            </footer>
-        </div>
+      <div>
+        <!-- Header -->
+        <header class="app-header">
+          <div class="header-left">
+            <img
+              src="public/assets/attivo-logo.png"
+              alt="ATTIVO Logo"
+              class="header-logo"
+            />
+            <div style="font-size: 1.5rem; font-weight: bold">
+              ATTIVO SPORTS PLATFORM
+            </div>
+          </div>
+          <button class="button button-primary">CONNECTED</button>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #333333;
+            background-color: #000000;
+          "
+        >
+          <div
+            style="
+              padding: 0.75rem 1.5rem;
+              cursor: pointer;
+              border-bottom: 3px solid #ff0000;
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              color: #ff0000;
+              letter-spacing: 1px;
+            "
+          >
+            <span style="font-size: 1.25rem">👤</span>
+            SPORT ID
+          </div>
+          <div
+            style="
+              padding: 0.75rem 1.5rem;
+              cursor: pointer;
+              border-bottom: 3px solid transparent;
+              font-weight: normal;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              color: white;
+              letter-spacing: 1px;
+            "
+          >
+            <span style="font-size: 1.25rem">📱</span>
+            SOCIAL FEED
+          </div>
+          <div
+            style="
+              padding: 0.75rem 1.5rem;
+              cursor: pointer;
+              border-bottom: 3px solid transparent;
+              font-weight: normal;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              color: white;
+              letter-spacing: 1px;
+            "
+          >
+            <span style="font-size: 1.25rem">🏆</span>
+            CHALLENGES
+          </div>
+          <div
+            style="
+              padding: 0.75rem 1.5rem;
+              cursor: pointer;
+              border-bottom: 3px solid transparent;
+              font-weight: normal;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              color: white;
+              letter-spacing: 1px;
+            "
+          >
+            <span style="font-size: 1.25rem">🛒</span>
+            MARKETPLACE
+          </div>
+        </nav>
+
+        <!-- Main Content (Sample) -->
+        <main class="main-content">
+          <h1>SPORT ID</h1>
+          <p>
+            This is a test page for the ATTIVO Sports Platform app interface.
+          </p>
+          <p>
+            In a real implementation, this would show dynamic content based on
+            the selected tab.
+          </p>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+          <div>ATTIVO SPORTS PLATFORM © 2023</div>
+          <div class="footer-tagline">POWERED BY BLOCKCHAIN TECHNOLOGY</div>
+        </footer>
+      </div>
     </div>
-    
+
     <script>
-        function showContent(contentId) {
-            // Hide all content
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Show selected content
-            document.getElementById(contentId).classList.add('active');
-            
-            // Update tabs
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Find and activate the correct tab
-            tabs.forEach(tab => {
-                if (tab.textContent.toLowerCase().includes(contentId)) {
-                    tab.classList.add('active');
-                }
-            });
-        }
+      function showContent(contentId) {
+        // Hide all content
+        const contents = document.querySelectorAll(".content");
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        // Show selected content
+        document.getElementById(contentId).classList.add("active");
+
+        // Update tabs
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Find and activate the correct tab
+        tabs.forEach((tab) => {
+          if (tab.textContent.toLowerCase().includes(contentId)) {
+            tab.classList.add("active");
+          }
+        });
+      }
     </script>
-</body>
-</html> 
+  </body>
+</html>
